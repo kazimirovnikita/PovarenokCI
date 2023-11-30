@@ -42,4 +42,14 @@ public class CuisineTest {
 
         assertEquals(expectedName, actualName);
     }
+
+    @Test
+    public void testSetName2() {
+        String expectedName = "Русская";
+        Cuisine cuisine = new Cuisine(1L, "Французская");
+        cuisine.setName(expectedName);
+        String actualName = cuisine.getName();
+
+        assertEquals(expectedName, actualName);
+    }
 }
