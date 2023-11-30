@@ -73,6 +73,3 @@ jobs:
       - name: Backend integration tests
         run: mvn test -Dtest="integration/*"
         working-directory: ./Backend
-
-  
-

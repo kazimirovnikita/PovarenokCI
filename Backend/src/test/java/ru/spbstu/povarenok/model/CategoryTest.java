@@ -24,6 +24,24 @@ public class CategoryTest {
         assertEquals(expectedId, actualId);
     }
 
+    public void testSetId2() {
+        Long expectedId = 2L;
+        Category category = new Category(1L, "Суп");
+        category.setId(expectedId);
+        Long actualId = category.getId();
+
+        assertEquals(expectedId, actualId);
+    }
+
+    public void testSetId3() {
+        Long expectedId = 2L;
+        Category category = new Category(1L, "Суп");
+        category.setId(expectedId);
+        Long actualId = category.getId();
+
+        assertEquals(expectedId, actualId);
+    }
+
     @Test
     public void testGetName() {
         String expectedName = "Суп";
