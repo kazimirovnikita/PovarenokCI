@@ -1,0 +1,19 @@
+HELP.md
+mvnw
+mvnw.cmd
+.mvn
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+*.DS_Store
+
+src/main/resources/application.properties
+src/main/resources/application-dev.properties
+src/main/resources/application-test.properties

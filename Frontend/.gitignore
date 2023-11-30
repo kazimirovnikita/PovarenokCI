@@ -1,0 +1,8 @@
+*.DS_Store
+
+### IntelliJ IDEA ###
+.idea
+
+downloads
+
+node_modules/chromedriver

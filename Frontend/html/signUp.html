@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="/js/jquery-3.6.2.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="Страница регистрации">
+    <title>Povarenok</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div id="headerBlock">
+    <div><a href="index.html"><img src="../img/logo.png" id="logoImage" alt="Логотип"> </a></div>
+    <div id="textPovarenok"> Povarenok</div>
+</div>
+
+<div class="signInUpBlock" id="signUpBlock">
+    <div id="textSignUp" class="signInUpText"> Регистрация</div>
+
+    <form id="signUpForm" action="index.html" method="post">
+        <div>
+            <input class="inputSignInUp" type="text" placeholder="Введите логин" minlength="2" maxlength="30" required
+                   oninput="this.value = this.value.replace(/[^а-яёЁa-zA-Z0-9\s]/gi, '');"
+                   name="signUpLogin" id="signUpLogin">
+        </div>
+
+        <div>
+            <input class="inputSignInUp" type="text" placeholder="Введите пароль" minlength="8" maxlength="12" required
+                   oninput="this.value = this.value.replace(/[^а-яёЁa-zA-Z0-9\s]/gi, '');"
+                   name="signUpPassword" id="signUpPassword">
+        </div>
+
+        <div>
+            <input class="inputSignInUp" type="text" placeholder="Введите почту" minlength="4" maxlength="30" required
+                   oninput="this.value = this.value.replace(/[^а-яёЁa-zA-Z0-9\s][/@][^а-яёЁa-zA-Z0-9\s][.][^а-яёЁa-zA-Z0-9\s]/gi, '');"
+                   name="signUpEmail" id="signUpEmail">
+        </div>
+
+        <div>
+            <button type="submit" id="registerButton" name="registerButton" disabled>
+                Зарегистрироваться
+            </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
